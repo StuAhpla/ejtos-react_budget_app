@@ -71,6 +71,20 @@ export const AppReducer = (state, action) => {
             action.type = "DONE";
             state.budget = action.payload;
 
+            //Task 2: Editable budget value
+            //if (state.budget > 20000) {
+            //    alert("The budget can not exceed 20,000.")
+            //    state.budget = 20000
+            //}
+            //else if (state.budget < 0) {
+            //    alert("The budget can not exceed 20,000.")
+            //    state.budget = 20000
+            //}
+            //else if (state.budget < state.expenses) {
+            //    alert("The budget can not be lower than expenses.")
+            //    state.budget = state.expenses + 10
+            //}
+
             return {
                 ...state,
             };
