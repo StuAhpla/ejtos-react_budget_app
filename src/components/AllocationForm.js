@@ -10,6 +10,13 @@ const AllocationForm = (props) => {
 
     const submitEvent = () => {
 
+            //Task 1: Budget allocation Validation
+            if (isNaN(cost)) { 
+                alert("You must enter a number.");
+                setCost("");
+                return;
+            }
+
             if(cost > remaining) {
                 alert("The value cannot exceed remaining funds  £"+remaining);
                 setCost("");
